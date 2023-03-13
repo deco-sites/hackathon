@@ -9,12 +9,12 @@ export interface Props {
 function Faq({ summary, children }: Props) {
   return (
     <details>
-        <summary class="uppercase text-[22px] cursor-pointer">
-            <span class="pl-2">{summary}</span>
-        </summary>
-        <div class="pl-7 mt-2">
-            {children}
-        </div>
+      <summary class="uppercase text-[22px] cursor-pointer">
+        <span class="md:pl-2">{summary}</span>
+      </summary>
+      <div class="md:pl-7 mt-2">
+        {children}
+      </div>
     </details>
   );
 }
