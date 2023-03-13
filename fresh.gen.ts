@@ -101,7 +101,38 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Faq.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Faq",
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "title": "Item",
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "title": "Question",
+                },
+                "answer": {
+                  "type": "string",
+                  "title": "Answer",
+                  "description": "Href to the article",
+                },
+              },
+              "required": [
+                "question",
+                "answer",
+              ],
+            },
+            "title": "Items",
+          },
+        },
+        "required": [
+          "items",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Footer.tsx": {
@@ -109,7 +140,38 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Guides.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Guides",
+        "type": "object",
+        "properties": {
+          "links": {
+            "type": "array",
+            "items": {
+              "title": "Guide",
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                },
+                "link": {
+                  "type": "string",
+                  "title": "Link",
+                  "description": "Href to the article",
+                },
+              },
+              "required": [
+                "text",
+                "link",
+              ],
+            },
+            "title": "Links",
+          },
+        },
+        "required": [
+          "links",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Header.tsx": {
