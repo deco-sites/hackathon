@@ -10,7 +10,10 @@ export default function Setup() {
           <li>
             <p class="m-0">
               Caso ainda não tenha o Deno instalado na sua máquina,{" "}
-              <a href="https://deno.land/manual@v1.31.2/getting_started/installation">
+              <a
+                href="https://deno.land/manual@v1.31.2/getting_started/installation"
+                target="_blank"
+              >
                 siga os passos de instalação
               </a>.
             </p>
