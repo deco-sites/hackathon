@@ -1,8 +1,40 @@
-import Header from "$store/components/header/Header.tsx";
-import type { Props } from "$store/components/header/Header.tsx";
-
-function HeaderSection(props: Props) {
-  return <Header {...props} />;
+export default function Header() {
+  return (
+    <section class="relative md:mb-[200px]">
+      <div class="md:bg-[#2FD180] md:h-[254px] w-full md:pt-[144px] p-[20px] md:p-[0]">
+        <div class="relative md:max-w-[1800px] mx-auto md:px-[80px]">
+          <svg
+            width="139"
+            height="48"
+            class="max-w-[80px] md:max-w-none text-[#fff] md:text-[#1F261F] fill-current"
+            viewBox="0 0 139 48"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M118.264 40.4506C113.085 40.4506 112.197 35.3383 113.832 30.3628C115.127 26.4085 118.194 22.2506 122.762 22.2506C128.148 22.2506 128.692 27.7033 127.124 32.4752C125.759 36.5663 122.692 40.4506 118.264 40.4506ZM116.695 47.7421C125.692 47.7421 133.734 42.7666 136.938 33.77C140.278 24.2962 136.527 14.8223 124.26 14.8223C114.446 14.8223 106.948 20.9558 104.085 29.0681C100.881 38.2015 104.358 47.7421 116.695 47.7421ZM86.8422 47.7421C90.3861 47.7421 94.0001 46.9913 96.5197 45.9034C97.4072 43.4506 97.474 41.0646 96.7933 38.6787C95.0213 39.3595 92.5685 40.0434 90.0457 40.0434C83.2283 40.0434 82.6174 35.0011 84.049 30.7064C85.6174 26.1413 89.7053 22.4606 96.1824 22.4606C97.8876 22.4606 99.5228 22.7341 100.544 23.3481C102.316 20.9622 103.337 18.5762 103.544 16.1235C102.046 15.4427 99.5228 14.8287 96.2524 14.8287C85.6206 14.8287 77.2347 21.0322 74.2379 29.6184C71.3748 37.7307 73.5572 47.7485 86.8486 47.7485L86.8422 47.7421ZM50.2415 28.1805C52.0803 24.0894 54.9435 21.7066 58.6942 21.7066C62.0345 21.7066 62.5785 23.5454 62.0345 24.9769C61.217 26.9525 58.4206 28.1805 50.2415 28.1805ZM53.1715 47.7421C56.6486 47.7421 61.5542 47.0613 65.6453 45.0158C66.3261 42.7666 66.2593 40.5175 65.5085 38.1983C62.9189 39.4931 59.305 40.2439 56.0346 40.2439C51.1959 40.2439 48.5364 38.6755 48.6063 34.7244C61.8278 35.0648 68.7121 32.6788 70.9612 26.8189C73.2104 20.889 69.326 14.8223 60.1226 14.8223C50.3083 14.8223 43.0836 21.8434 40.4241 29.4085C37.6309 37.4507 39.4029 47.7421 53.1683 47.7421H53.1715ZM13.6631 47.7421C22.7298 47.7421 27.8866 43.5842 33.8834 30.84C37.1537 23.819 39.9501 16.9347 43.1536 10.1204L46.9712 11.3484C47.9924 11.6888 48.5395 11.0748 48.0623 10.1204L43.4272 0.64658C43.0868 -0.0342123 42.336 -0.1042 41.8588 0.102582L30.3394 4.46411C29.385 4.8045 29.4518 5.69208 30.4062 5.96248L33.8134 7.05366C31.0202 13.3939 27.5431 22.9346 24.7467 28.9313C21.61 35.6119 20.0448 40.3139 14.7289 40.3139C9.41293 40.3139 8.52535 36.1559 10.7745 30.226C13.3641 23.3418 17.7256 21.2962 22.7012 22.7278C24.0659 20.819 25.0871 17.9559 25.4943 15.3663C24.0627 14.9559 22.3576 14.8223 20.9292 14.8223C12.8869 14.8223 4.91142 18.9802 1.64106 27.7033C-2.58369 38.9491 1.32293 47.7421 13.6599 47.7421H13.6631Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="relative md:max-w-[1800px] mx-auto">
+        <div class="bg-black text-[60px] md:text-[134px] leading-[50px] md:leading-[105px] font-bold uppercase text-white z-10 px-[20px] md:pl-[80px] mt-[20px] relative inline-block z-20">
+          Ha<br />
+          cka<br />
+          thon
+        </div>
+        <div class="bg-white absolute h-[43px] md:h-[95px] w-full mt-[-48px] md:mt-[-101px] z-10">
+        </div>
+        <div class="flex justify-end mt-[20px] md:mt-[-390px] md:absolute right-0">
+          <div class="md:flex md:bg-[#095F5D] text-white md:rounded-tl-full md:rounded-bl-full md:w-[63%] px-[20px] md:px-16 py-[20px] md:py-20 gap-8 md:leading-9">
+            <div class="flex-none uppercase text-[24px] md:text-[34px] font-bold md:w-[200px] md:text-right mb-[12px]">
+              The game starts <u>here</u>
+            </div>
+            <div class="flex-auto text-[18px] md:text-[23px]">
+              Bem-vindo(a) ao guia da nossa Hackathon! Aqui você saberá como
+              fazer o setup inicial, terá acesso ao cronograma e regras do jogo
+              e poderá consultar nossos guias gerais e FAQ.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default HeaderSection;
