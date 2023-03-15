@@ -21,7 +21,9 @@ export default function Setup() {
           <li>
             <p>
               Com o Deno instalado, clone o repositório do seu site. Para isso,
-              abra seu terminal e digite (substitua [seu-site] pelo <i>slug</i> do seu site):
+              abra seu terminal e digite (substitua [seu-site] pelo <i>slug</i>
+              {" "}
+              do seu site):
             </p>
             <div class="rounded-sm bg-code text-sm px-5 py-3 flex justify-between">
               <code class="">
