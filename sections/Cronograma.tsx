@@ -21,7 +21,7 @@ export default function Cronograma() {
             <strong>Sábado, 18 de Março</strong>
             <br />
             10h - Café com Performance - dicas para pagespeed 90+<br />
-            14h - Q&A com Bert Belder, co-founder e CTO da Deno <br />
+            15h - Q&A com Bert Belder, co-founder e CTO da Deno <br />
           </div>
           <div>
             <strong>Domingo, 19 de Março</strong>
