@@ -14,14 +14,14 @@ export default function Cronograma() {
             17h - Abertura do evento e apresentação das regras<br />
             17:15h - Apresentação da plataforma deco.cx<br />
             18h - Introdução às tecnologias que serão utilizadas<br />
-            19h - Distribuição das salas de Discord e mentores
+            19h - Se alavancando da loja tema Fashion<br />
+            19:30h - Distribuição das salas de Discord e mentores
           </div>
           <div>
             <strong>Sábado, 18 de Março</strong>
             <br />
-            11h - Dicas de performance I<br />
-            16h - Dicas de performance II<br />
-            17:30h - Palestra de Bert Belder, co-founder e CTO da Deno
+            10h - Café com Performance - dicas para pagespeed 90+<br />
+            14h - Q&A com Bert Belder, co-founder e CTO da Deno <br />
           </div>
           <div>
             <strong>Domingo, 19 de Março</strong>
