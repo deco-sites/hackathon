@@ -9,13 +9,13 @@ export default function Cronograma() {
           </div>
         </h2>
         <div class="flex flex-col gap-8 md:gap-16">
-        <div class="">
-            <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
-              1. Distribuição dos sites
-            </h3>
-              <p class="mb-0">
-              Vamos disponibilizar algumas opções de lojas em produção, e cada time escolherá a sua preferida para trabalhar em uma PoC
-              </p>
+            <div>
+                <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
+                    1. Distribuição das lojas entre os times
+                </h3>
+                <div>
+                    <p>Vamos disponibilizar algumas opções de lojas em produção e cada time escolherá a sua preferida para trabalhar em uma PoC. A distribuição ocorrerá no início da Hackathon.</p>
+                </div>
             </div>
           <div class="">
             <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
@@ -59,7 +59,7 @@ export default function Cronograma() {
           </div>
           <div class="">
             <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
-              3. Seleção das Finalistas
+              3. Seleção das PoCs Finalistas
             </h3>
             <div class="">
               <p>
