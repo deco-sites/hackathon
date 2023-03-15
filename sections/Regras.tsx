@@ -9,9 +9,17 @@ export default function Cronograma() {
           </div>
         </h2>
         <div class="flex flex-col gap-8 md:gap-16">
+        <div class="">
+            <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
+              1. Distribuição dos sites
+            </h3>
+              <p class="mb-0">
+              Vamos disponibilizar algumas opções de lojas em produção, e cada time escolherá a sua preferida para trabalhar em uma PoC
+              </p>
+            </div>
           <div class="">
             <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
-              1. Premiação por entrega
+              2. Premiação por entrega
             </h3>
             <div class="">
               <p>
@@ -51,7 +59,7 @@ export default function Cronograma() {
           </div>
           <div class="">
             <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
-              2. Seleção das Finalistas
+              3. Seleção das Finalistas
             </h3>
             <div class="">
               <p>
@@ -77,7 +85,7 @@ export default function Cronograma() {
           </div>
           <div class="">
             <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
-              3. Apresentação das PoCs
+              4. Apresentação das PoCs
             </h3>
             <div class="">
               <p>
@@ -102,7 +110,7 @@ export default function Cronograma() {
           </div>
           <div class="">
             <h3 class="uppercase font-bold text-[24px] md:text-[34px] mb-6">
-              4. Premiação final
+              5. Premiação final
             </h3>
             <div class="">
               <p>
