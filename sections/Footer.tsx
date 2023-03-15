@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <section class="flex flex-col gap-4 md:flex-row items-center md:items-start justify-between p-[8px] md:py-6 text-[14px] bg-white text-black mt-[60px] md:mt-[120px] md:px-[80px]">
+    <section class="flex flex-col gap-4 md:flex-row items-center md:items-start justify-between p-[8px] md:py-6 text-[14px] bg-white text-black md:px-[80px]">
       <a class="flex-none md:w-80" href="http://deco.cx/" target="_blank">
         <svg
           width="62"
