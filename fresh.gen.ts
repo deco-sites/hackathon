@@ -21,14 +21,15 @@ import * as $$$1 from "./sections/Faq.tsx";
 import * as $$$2 from "./sections/Footer.tsx";
 import * as $$$3 from "./sections/Guides.tsx";
 import * as $$$4 from "./sections/Header.tsx";
-import * as $$$5 from "./sections/Regras.tsx";
-import * as $$$6 from "./sections/Setup.tsx";
-import * as $$$7 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$8 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$9 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$10 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$11 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$12 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$5 from "./sections/Preparacao.tsx";
+import * as $$$6 from "./sections/Regras.tsx";
+import * as $$$7 from "./sections/Setup.tsx";
+import * as $$$8 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$9 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$10 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$11 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$12 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$13 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$1 from "$live/functions/MatchDate.ts";
 import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
@@ -68,14 +69,15 @@ const manifest: DecoManifest = {
     "./sections/Footer.tsx": $$$2,
     "./sections/Guides.tsx": $$$3,
     "./sections/Header.tsx": $$$4,
-    "./sections/Regras.tsx": $$$5,
-    "./sections/Setup.tsx": $$$6,
-    "deco-sites/std/sections/SEO.tsx": $$$7,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$8,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$9,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$10,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$11,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$12,
+    "./sections/Preparacao.tsx": $$$5,
+    "./sections/Regras.tsx": $$$6,
+    "./sections/Setup.tsx": $$$7,
+    "deco-sites/std/sections/SEO.tsx": $$$8,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$9,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$10,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$11,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$12,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$13,
   },
   functions: {
     "$live/functions/EffectSelectPage.ts": $$$$0,
@@ -175,6 +177,10 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Header.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Preparacao.tsx": {
       "inputSchema": null,
       "outputSchema": null,
     },
