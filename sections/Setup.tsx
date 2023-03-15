@@ -21,11 +21,11 @@ export default function Setup() {
           <li>
             <p>
               Com o Deno instalado, clone o repositório do seu site. Para isso,
-              abra seu terminal e digite:
+              abra seu terminal e digite (substitua [seu-site] pelo <i>slug</i> do seu site):
             </p>
             <div class="rounded-sm bg-code text-sm px-5 py-3 flex justify-between">
               <code class="">
-                $ git clone git@github.com:deco-sites/fashion.git
+                $ git clone git@github.com:deco-sites/[seu-site].git
               </code>
             </div>
           </li>
