@@ -43,7 +43,7 @@ export default function Setup() {
             <p>
               Com o Deno instalado, clone o repositório da loja{" "}
               <a href="https://github.com/deco-sites/fashion" target="_blank">
-                fashion
+                Fashion
               </a>. Para isso, abra seu terminal e digite:
             </p>
             <div class="rounded-sm bg-code text-sm px-5 py-3 flex justify-between">
@@ -69,7 +69,7 @@ export default function Setup() {
               <a href="http://localhost:8000/" target="_blank">
                 http://localhost:8000/
               </a>{" "}
-              e você deve ver a fashion rodando na sua máquina.
+              e você deve ver a Fashion rodando na sua máquina.
             </p>
           </li>
         </ol>
