@@ -30,8 +30,11 @@ export default function Setup() {
             </p>
           </li>
           <li>
+            Um membro do seu time deve criar um site na deco.cx. Para isso, a pessoa deve acessar <a href="https://deco.cx/onboarding" target="_blank">https://deco.cx/onboarding</a>. Após a criação, na home do site é possível convidar os outros membros do time (Contributors - Invite).
+          </li>
+          <li>
             <p>
-              Com o Deno instalado, clone o repositório do seu site. Para isso,
+              Agora é hora de clonar o repositório do seu site. Para isso,
               abra seu terminal e digite (substitua [seu-site] pelo <i>slug</i>
               {" "}
               do seu site):
