@@ -1,5 +1,3 @@
-import { black } from "https://deno.land/std@0.147.0/fmt/colors.ts";
-
 /** @type {import('$fresh/plugins/twind').Options} */
 export default {
   preflight: (preflight) => ({
