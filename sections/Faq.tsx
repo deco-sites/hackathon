@@ -2,9 +2,6 @@ import FaqDetail from "$store/components/FaqDetail.tsx";
 
 export interface Item {
   question: string;
-  /**
-   * @description Href to the article
-   */
   answer: string;
 }
 

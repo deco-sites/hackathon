@@ -103,7 +103,39 @@ const manifest: DecoManifest = {
   },
   schemas: {
     "./sections/Cronograma.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Cronograma",
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "title": "Item",
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Title",
+                },
+                "content": {
+                  "type": "string",
+                  "title": "Content",
+                },
+              },
+              "required": [
+                "content",
+              ],
+            },
+            "title": "Items",
+          },
+        },
+        "required": [
+          "items",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Faq.tsx": {
@@ -124,7 +156,6 @@ const manifest: DecoManifest = {
                 "answer": {
                   "type": "string",
                   "title": "Answer",
-                  "description": "Href to the article",
                 },
               },
               "required": [

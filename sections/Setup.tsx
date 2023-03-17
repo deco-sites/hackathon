@@ -19,6 +19,17 @@ export default function Setup() {
             </p>
           </li>
           <li>
+            <p class="m-0">
+              Se você usa o VS Code, recomendamos que instale{"  "}
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno"
+                target="_blank"
+              >
+                a extensão que dá suporte ao Deno
+              </a>.
+            </p>
+          </li>
+          <li>
             <p>
               Com o Deno instalado, clone o repositório do seu site. Para isso,
               abra seu terminal e digite (substitua [seu-site] pelo <i>slug</i>
@@ -48,7 +59,7 @@ export default function Setup() {
               <a href="http://localhost:8000/" target="_blank">
                 http://localhost:8000/
               </a>{" "}
-              e você deve ver seu site com o template da loja fashion rodando na
+              e você deve ver seu site com o template da loja Fashion rodando na
               sua máquina.
             </p>
             <p>
