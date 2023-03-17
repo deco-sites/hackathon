@@ -1,7 +1,7 @@
 export default function Cronograma() {
   return (
     <section class="text-[20px] px-[20px] md:pl-[240px] text-white mt-[60px] md:mt-[120px] relative md:max-w-[1800px] mx-auto">
-      <div class="md:w-[990px]">
+      <div class="md:w-2/3">
         <h2 class="text-[38px] md:text-[54px] font-bold uppercase mb-6">
           <div class="w-[40px] h-[12px] bg-white"></div>
           <div class="text-green leading-[44px] mt-2 md:leading-normal md:mt-0">
