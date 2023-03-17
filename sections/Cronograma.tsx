@@ -13,9 +13,8 @@ export default function Cronograma() {
             <br />
             17h - Abertura do evento e apresentação das regras<br />
             17:15h - Apresentação da plataforma deco.cx<br />
-            18h - Introdução às tecnologias que serão utilizadas<br />
-            19h - Se alavancando da loja tema Fashion<br />
-            19:30h - Distribuição das salas de Discord e mentores
+            18h - Introdução às tecnologias da deco.cx<br />
+            19h - Encerramento e hora da largada
           </div>
           <div>
             <strong>Sábado, 18 de Março</strong>
