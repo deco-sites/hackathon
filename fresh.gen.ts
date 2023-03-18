@@ -23,16 +23,17 @@ import * as $$$2 from "./sections/Footer.tsx";
 import * as $$$3 from "./sections/Guides.tsx";
 import * as $$$4 from "./sections/Header.tsx";
 import * as $$$5 from "./sections/Preparacao.tsx";
-import * as $$$6 from "./sections/Regras.tsx";
-import * as $$$7 from "./sections/Regulamento.tsx";
-import * as $$$8 from "./sections/Setup.tsx";
-import * as $$$9 from "./sections/Spacer.tsx";
-import * as $$$10 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$11 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$12 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$13 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$14 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$15 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$6 from "./sections/Preview.tsx";
+import * as $$$7 from "./sections/Regras.tsx";
+import * as $$$8 from "./sections/Regulamento.tsx";
+import * as $$$9 from "./sections/Setup.tsx";
+import * as $$$10 from "./sections/Spacer.tsx";
+import * as $$$11 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$12 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$13 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$14 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$15 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$16 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$1 from "$live/functions/MatchDate.ts";
 import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
@@ -74,16 +75,17 @@ const manifest: DecoManifest = {
     "./sections/Guides.tsx": $$$3,
     "./sections/Header.tsx": $$$4,
     "./sections/Preparacao.tsx": $$$5,
-    "./sections/Regras.tsx": $$$6,
-    "./sections/Regulamento.tsx": $$$7,
-    "./sections/Setup.tsx": $$$8,
-    "./sections/Spacer.tsx": $$$9,
-    "deco-sites/std/sections/SEO.tsx": $$$10,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$11,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$12,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$13,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$14,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$15,
+    "./sections/Preview.tsx": $$$6,
+    "./sections/Regras.tsx": $$$7,
+    "./sections/Regulamento.tsx": $$$8,
+    "./sections/Setup.tsx": $$$9,
+    "./sections/Spacer.tsx": $$$10,
+    "deco-sites/std/sections/SEO.tsx": $$$11,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$12,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$13,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$14,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$15,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$16,
   },
   functions: {
     "$live/functions/EffectSelectPage.ts": $$$$0,
@@ -219,6 +221,53 @@ const manifest: DecoManifest = {
     },
     "./sections/Preparacao.tsx": {
       "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Preview.tsx": {
+      "inputSchema": {
+        "title": " Preview",
+        "type": "object",
+        "properties": {
+          "sites": {
+            "title": "Sites",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "title": "Label",
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                },
+                "teamLabel": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Team Label",
+                },
+                "teamDescription": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Team Description",
+                },
+              },
+              "required": [
+                "label",
+                "url",
+              ],
+            },
+          },
+        },
+        "required": [
+          "sites",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Regras.tsx": {
