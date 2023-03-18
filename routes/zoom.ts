@@ -6,7 +6,7 @@ export const handler: Handlers = {
       "https://us06web.zoom.us/j/82649858152?pwd=Qm4rWHlEZzhtaXJCaGhlRzhvMUp4QT09";
 
     return new Response(`Redirecting to ${url}`, {
-      status: 301,
+      status: 302,
       headers: {
         Location: url,
       },
