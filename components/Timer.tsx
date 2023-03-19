@@ -16,7 +16,7 @@ const focus = signal<"minutes" | "seconds" | undefined>(undefined);
 let id: number | undefined = undefined;
 
 const start = () => {
-  id = setInterval(() => {
+  const decrement = () => {
     const newValue = Math.max(total.peek() - 1, 0);
 
     total.value = newValue;
@@ -24,7 +24,10 @@ const start = () => {
     if (newValue <= 0) {
       stop();
     }
-  }, 1e3);
+  };
+
+  id = setInterval(decrement, 1e3);
+  decrement();
 };
 
 const stop = () => {
@@ -84,9 +87,6 @@ function Timer() {
           class="flex items-center justify-center text-white h-screen w-screen"
           style={{
             fontSize: "25.5vw",
-            // background: `linear-gradient(to right, rgba(255, 255, 255, 0.1) ${
-            //   (total.value / reset.value) * 100
-            // }%, rgba(255, 255, 255, 0.1) ${(total.value / reset.value) * 100}%)`,
             background:
               `linear-gradient(to top, green ${percentage.value}%, transparent ${percentage.value}%)`,
           }}
