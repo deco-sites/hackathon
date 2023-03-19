@@ -58,6 +58,7 @@ if (typeof document !== "undefined") {
       if (focus.value === "seconds") {
         total.value += 1;
       }
+      reset.value = total.value;
     } else if (event.key === "ArrowDown") {
       if (focus.value === "minutes") {
         total.value = Math.max(0, total.value - 60);
@@ -65,9 +66,12 @@ if (typeof document !== "undefined") {
       if (focus.value === "seconds") {
         total.value = Math.max(0, total.value - 1);
       }
+      reset.value = total.value;
     }
   });
 }
+
+const percentage = computed(() => (100 * total.value / reset.value).toFixed(0));
 
 function Timer() {
   return (
@@ -75,15 +79,26 @@ function Timer() {
       <Head>
         <title>Deco Timer</title>
       </Head>
-      <div
-        class="flex items-center justify-center text-white h-screen w-screen"
-        style={{ fontSize: "25.5vw" }}
-      >
-        <span class={focus.value === "minutes" ? "text-gray-400" : ""}>
-          {minutes}
-        </span>:<span class={focus.value === "seconds" ? "text-gray-400" : ""}>
-          {seconds}
-        </span>
+      <div class="bg-[1F261F]">
+        <div
+          class="flex items-center justify-center text-white h-screen w-screen"
+          style={{
+            fontSize: "25.5vw",
+            // background: `linear-gradient(to right, rgba(255, 255, 255, 0.1) ${
+            //   (total.value / reset.value) * 100
+            // }%, rgba(255, 255, 255, 0.1) ${(total.value / reset.value) * 100}%)`,
+            background:
+              `linear-gradient(to top, green ${percentage.value}%, transparent ${percentage.value}%)`,
+          }}
+        >
+          <span class={focus.value === "minutes" ? "text-gray-400" : ""}>
+            {minutes}
+          </span>:<span
+            class={focus.value === "seconds" ? "text-gray-400" : ""}
+          >
+            {seconds}
+          </span>
+        </div>
       </div>
     </>
   );
