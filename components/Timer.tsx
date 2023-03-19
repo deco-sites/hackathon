@@ -74,7 +74,7 @@ if (typeof document !== "undefined") {
   });
 }
 
-const percentage = computed(() => (100 * total.value / reset.value).toFixed(0));
+const percentage = computed(() => (100 * total.value / reset.value).toFixed(2));
 
 function Timer() {
   return (
