@@ -1,6 +1,6 @@
 /** @type {import('$fresh/plugins/twind').Options} */
 export default {
-  preflight: (preflight) => ({
+  preflight: (preflight: any) => ({
     ...preflight,
 
     body: {
