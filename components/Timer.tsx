@@ -50,7 +50,10 @@ function Timer() {
       <Head>
         <title>Deco Timer</title>
       </Head>
-      <div class="flex items-center justify-center text-white h-screen w-screen text-9xl">
+      <div
+        class="flex items-center justify-center text-white h-screen w-screen"
+        style={{ fontSize: "25.5vw" }}
+      >
         {minutes}:{seconds}
       </div>
     </>
