@@ -19,23 +19,27 @@ import * as $$2 from "./islands/HeaderModals.tsx";
 import * as $$3 from "./islands/LiveControls.tsx";
 import * as $$4 from "./islands/SearchControls.tsx";
 import * as $$5 from "./islands/Timer.tsx";
-import * as $$$0 from "./sections/Cronograma.tsx";
-import * as $$$1 from "./sections/Faq.tsx";
-import * as $$$2 from "./sections/Footer.tsx";
-import * as $$$3 from "./sections/Guides.tsx";
-import * as $$$4 from "./sections/Header.tsx";
-import * as $$$5 from "./sections/Preparacao.tsx";
-import * as $$$6 from "./sections/Preview.tsx";
-import * as $$$7 from "./sections/Regras.tsx";
-import * as $$$8 from "./sections/Regulamento.tsx";
-import * as $$$9 from "./sections/Setup.tsx";
-import * as $$$10 from "./sections/Spacer.tsx";
-import * as $$$11 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$12 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$13 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$14 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$15 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$16 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$0 from "./sections/3rdHeader.tsx";
+import * as $$$1 from "./sections/3rdSmallParagraph.tsx";
+import * as $$$2 from "./sections/3rdTextSection.tsx";
+import * as $$$3 from "./sections/Cronograma.tsx";
+import * as $$$4 from "./sections/Faq.tsx";
+import * as $$$5 from "./sections/Footer.tsx";
+import * as $$$6 from "./sections/Guides.tsx";
+import * as $$$7 from "./sections/Head.tsx";
+import * as $$$8 from "./sections/Header.tsx";
+import * as $$$9 from "./sections/Preparacao.tsx";
+import * as $$$10 from "./sections/Preview.tsx";
+import * as $$$11 from "./sections/Regras.tsx";
+import * as $$$12 from "./sections/Regulamento.tsx";
+import * as $$$13 from "./sections/Setup.tsx";
+import * as $$$14 from "./sections/Spacer.tsx";
+import * as $$$15 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$16 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$17 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$18 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$19 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$20 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$1 from "$live/functions/MatchDate.ts";
 import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
@@ -73,23 +77,27 @@ const manifest: DecoManifest = {
     "./islands/Timer.tsx": $$5,
   },
   sections: {
-    "./sections/Cronograma.tsx": $$$0,
-    "./sections/Faq.tsx": $$$1,
-    "./sections/Footer.tsx": $$$2,
-    "./sections/Guides.tsx": $$$3,
-    "./sections/Header.tsx": $$$4,
-    "./sections/Preparacao.tsx": $$$5,
-    "./sections/Preview.tsx": $$$6,
-    "./sections/Regras.tsx": $$$7,
-    "./sections/Regulamento.tsx": $$$8,
-    "./sections/Setup.tsx": $$$9,
-    "./sections/Spacer.tsx": $$$10,
-    "deco-sites/std/sections/SEO.tsx": $$$11,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$12,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$13,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$14,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$15,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$16,
+    "./sections/3rdHeader.tsx": $$$0,
+    "./sections/3rdSmallParagraph.tsx": $$$1,
+    "./sections/3rdTextSection.tsx": $$$2,
+    "./sections/Cronograma.tsx": $$$3,
+    "./sections/Faq.tsx": $$$4,
+    "./sections/Footer.tsx": $$$5,
+    "./sections/Guides.tsx": $$$6,
+    "./sections/Head.tsx": $$$7,
+    "./sections/Header.tsx": $$$8,
+    "./sections/Preparacao.tsx": $$$9,
+    "./sections/Preview.tsx": $$$10,
+    "./sections/Regras.tsx": $$$11,
+    "./sections/Regulamento.tsx": $$$12,
+    "./sections/Setup.tsx": $$$13,
+    "./sections/Spacer.tsx": $$$14,
+    "deco-sites/std/sections/SEO.tsx": $$$15,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$16,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$17,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$18,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$19,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$20,
   },
   functions: {
     "$live/functions/EffectSelectPage.ts": $$$$0,
@@ -110,6 +118,106 @@ const manifest: DecoManifest = {
     "deco-sites/std/functions/vtexProductListingPage.ts": $$$$15,
   },
   schemas: {
+    "./sections/3rdHeader.tsx": {
+      "inputSchema": {
+        "title": "3rd Header",
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "title": "Location",
+          },
+          "dateStart": {
+            "type": "string",
+            "title": "Date Start",
+          },
+          "dateEnd": {
+            "type": "string",
+            "title": "Date End",
+          },
+        },
+        "required": [
+          "location",
+          "dateStart",
+          "dateEnd",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/3rdSmallParagraph.tsx": {
+      "inputSchema": {
+        "title": "3rd Small Paragraph",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "text": {
+            "type": "string",
+            "title": "Text",
+            "format": "textarea",
+          },
+        },
+        "required": [
+          "title",
+          "text",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/3rdTextSection.tsx": {
+      "inputSchema": {
+        "title": "3rd Text Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "titlePadding": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title Padding",
+          },
+          "text": {
+            "type": "string",
+            "title": "Text",
+            "format": "textarea",
+          },
+          "columns": {
+            "title": "Columns",
+            "type": "array",
+            "items": {
+              "title": "Column",
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                  "format": "textarea",
+                },
+              },
+              "required": [
+                "title",
+                "text",
+              ],
+            },
+          },
+        },
+        "required": [
+          "title",
+          "text",
+        ],
+      },
+      "outputSchema": null,
+    },
     "./sections/Cronograma.tsx": {
       "inputSchema": {
         "title": " Cronograma",
@@ -215,6 +323,55 @@ const manifest: DecoManifest = {
         },
         "required": [
           "links",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Head.tsx": {
+      "inputSchema": {
+        "title": " Head",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+          },
+          "url": {
+            "type": "string",
+            "title": "Url",
+          },
+          "imageUrl": {
+            "type": "string",
+            "title": "Image Url",
+          },
+          "faviconUrl": {
+            "type": "string",
+            "title": "Favicon Url",
+          },
+          "styleUrls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+            },
+            "title": "Style Urls",
+          },
+          "themeColor": {
+            "type": "string",
+            "title": "Theme Color",
+          },
+        },
+        "required": [
+          "title",
+          "description",
+          "url",
+          "imageUrl",
+          "faviconUrl",
+          "styleUrls",
+          "themeColor",
         ],
       },
       "outputSchema": null,
