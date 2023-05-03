@@ -28,7 +28,7 @@ export default function TextSection({
     <div class="font-mono mb-[132px] text-white">
         <span class="underline"></span>
         <div class="h-[60px] md:h-[80px] bg-accent flex items-center w-full mb-[52px]">
-            <div class={`ml-[40px] md:ml-[80px] lg:ml-[${titlePadding}] bg-primary text-accent text-3xl md:text-[48px] leading-[1] px-8 pt-5 pb-6`}>{title}</div>
+            <h2 class={`font-bold md:font-normal ml-[40px] md:ml-[80px] lg:ml-[${titlePadding}] bg-primary text-accent text-3xl md:text-[48px] leading-[1] px-8 pt-5 pb-6`}>{title}</h2>
         </div>
         <div class="flex flex-col container mx-auto px-5 md:px-0 gap-[52px] md:text-xl leading-[1.5] mb-[52px]" dangerouslySetInnerHTML={{ __html: text }}></div>
         {
@@ -38,13 +38,13 @@ export default function TextSection({
                         columns.map(col => {
                             return (
                                 <div class="flex-auto flex flex-col gap-7" style="flex-basis: 0">
-                                    <div class="text-2xl md:text-3xl leading-[1.3]" dangerouslySetInnerHTML={{ __html: col.title }}></div>
+                                    <h3 class="font-bold md:font-normal text-2xl md:text-3xl leading-[1.3]" dangerouslySetInnerHTML={{ __html: col.title }}></h3>
                                     <div class="md:text-xl leading-[1.5] flex flex-col gap-6">
                                         {
                                             col.entries.map(entry => {
                                                 return (
                                                     <div class="flex">
-                                                        <div class="flex-none w-[100px]">{entry.time}</div>
+                                                        <div class="flex-none w-20 md:w-[100px]">{entry.time}</div>
                                                         <div class="flex-auto" dangerouslySetInnerHTML={{ __html: entry.text }}></div>
                                                     </div>
                                                 )
