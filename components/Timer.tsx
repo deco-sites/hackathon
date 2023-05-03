@@ -80,24 +80,25 @@ function Timer() {
   return (
     <>
       <Head>
-        <title>Deco Timer</title>
+        <title>deco.cx timer</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+        </style>
       </Head>
-      <div class="bg-[1F261F]">
+      <div class="relative bg-primary font-bold" style="font-family: 'Roboto Mono'">
         <div
-          class="flex items-center justify-center text-white h-screen w-screen"
-          style={{
-            fontSize: "25.5vw",
-            background:
-              `linear-gradient(to top, green ${percentage.value}%, transparent ${percentage.value}%)`,
-          }}
+          class="flex items-center justify-center text-[#02F67C] h-screen w-screen text-[25.5vw] bg-primary"
         >
-          <span class={focus.value === "minutes" ? "text-gray-400" : ""}>
+          <span class={focus.value === "minutes" ? "text-[#70FAB5] duration-100" : ""}>
             {minutes}
           </span>:<span
-            class={focus.value === "seconds" ? "text-gray-400" : ""}
+            class={focus.value === "seconds" ? "text-[#70FAB5] duration-100" : ""}
           >
             {seconds}
           </span>
+          <div class={`absolute bottom-0 bg-[rgba(2,246,124,.1)] h-[${percentage.value}%] w-screen duration-200 ease-in-out`}>
+
+          </div>
         </div>
       </div>
     </>
