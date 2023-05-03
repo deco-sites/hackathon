@@ -50,6 +50,30 @@ if (typeof document !== "undefined") {
     } else if (event.key === "r" || event.key === "R") {
       stop();
       total.value = reset.peek();
+    } else if (event.key === "1") {
+      stop();
+      total.value = 5 * 60;
+      reset.value = total.value;
+    } else if (event.key === "2") {
+      stop();
+      total.value = 2 * 5 * 60;
+      reset.value = total.value;
+    } else if (event.key === "3") {
+      stop();
+      total.value = 3 * 5 * 60;
+      reset.value = total.value;
+    } else if (event.key === "4") {
+      stop();
+      total.value = 4 * 5 * 60;
+      reset.value = total.value;
+    } else if (event.key === "5") {
+      stop();
+      total.value = 5 * 5 * 60;
+      reset.value = total.value;
+    } else if (event.key === "6") {
+      stop();
+      total.value = 6 * 5 * 60;
+      reset.value = total.value;
     } else if (event.key === "ArrowLeft") {
       focus.value = focus.value === "minutes" ? undefined : "minutes";
     } else if (event.key === "ArrowRight") {
