@@ -6,9 +6,6 @@ export default {
     body: {
       background: "#0A2121",
     },
-    a: {
-      decoration: "underline",
-    },
     p: {
       marginBottom: ".8em",
     },
@@ -36,6 +33,10 @@ export default {
       fontFamily: {
         mono: ["Noto Sans Mono", "monospace"]
       },
+      boxShadow: {
+        "3xl": "16px 16px 0px rgba(2, 246, 124, 0.3)",
+        "4xl": "24px 24px 0px rgba(2, 246, 124, 0.3)"
+      }
     },
     plugins: {
       ".underline": {
