@@ -21,26 +21,27 @@ import * as $$4 from "./islands/SearchControls.tsx";
 import * as $$5 from "./islands/Timer.tsx";
 import * as $$$0 from "./sections/3rdHeader.tsx";
 import * as $$$1 from "./sections/3rdRegister.tsx";
-import * as $$$2 from "./sections/3rdSmallParagraph.tsx";
-import * as $$$3 from "./sections/3rdTextSection.tsx";
-import * as $$$4 from "./sections/Cronograma.tsx";
-import * as $$$5 from "./sections/Faq.tsx";
-import * as $$$6 from "./sections/Footer.tsx";
-import * as $$$7 from "./sections/Guides.tsx";
-import * as $$$8 from "./sections/Head.tsx";
-import * as $$$9 from "./sections/Header.tsx";
-import * as $$$10 from "./sections/Preparacao.tsx";
-import * as $$$11 from "./sections/Preview.tsx";
-import * as $$$12 from "./sections/Regras.tsx";
-import * as $$$13 from "./sections/Regulamento.tsx";
-import * as $$$14 from "./sections/Setup.tsx";
-import * as $$$15 from "./sections/Spacer.tsx";
-import * as $$$16 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$17 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$18 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$19 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$20 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$21 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$2 from "./sections/3rdSchedule.tsx";
+import * as $$$3 from "./sections/3rdSmallParagraph.tsx";
+import * as $$$4 from "./sections/3rdTextSection.tsx";
+import * as $$$5 from "./sections/Cronograma.tsx";
+import * as $$$6 from "./sections/Faq.tsx";
+import * as $$$7 from "./sections/Footer.tsx";
+import * as $$$8 from "./sections/Guides.tsx";
+import * as $$$9 from "./sections/Head.tsx";
+import * as $$$10 from "./sections/Header.tsx";
+import * as $$$11 from "./sections/Preparacao.tsx";
+import * as $$$12 from "./sections/Preview.tsx";
+import * as $$$13 from "./sections/Regras.tsx";
+import * as $$$14 from "./sections/Regulamento.tsx";
+import * as $$$15 from "./sections/Setup.tsx";
+import * as $$$16 from "./sections/Spacer.tsx";
+import * as $$$17 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$18 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$19 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$20 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$21 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$22 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$1 from "$live/functions/MatchDate.ts";
 import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
@@ -80,26 +81,27 @@ const manifest: DecoManifest = {
   sections: {
     "./sections/3rdHeader.tsx": $$$0,
     "./sections/3rdRegister.tsx": $$$1,
-    "./sections/3rdSmallParagraph.tsx": $$$2,
-    "./sections/3rdTextSection.tsx": $$$3,
-    "./sections/Cronograma.tsx": $$$4,
-    "./sections/Faq.tsx": $$$5,
-    "./sections/Footer.tsx": $$$6,
-    "./sections/Guides.tsx": $$$7,
-    "./sections/Head.tsx": $$$8,
-    "./sections/Header.tsx": $$$9,
-    "./sections/Preparacao.tsx": $$$10,
-    "./sections/Preview.tsx": $$$11,
-    "./sections/Regras.tsx": $$$12,
-    "./sections/Regulamento.tsx": $$$13,
-    "./sections/Setup.tsx": $$$14,
-    "./sections/Spacer.tsx": $$$15,
-    "deco-sites/std/sections/SEO.tsx": $$$16,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$17,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$18,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$19,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$20,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$21,
+    "./sections/3rdSchedule.tsx": $$$2,
+    "./sections/3rdSmallParagraph.tsx": $$$3,
+    "./sections/3rdTextSection.tsx": $$$4,
+    "./sections/Cronograma.tsx": $$$5,
+    "./sections/Faq.tsx": $$$6,
+    "./sections/Footer.tsx": $$$7,
+    "./sections/Guides.tsx": $$$8,
+    "./sections/Head.tsx": $$$9,
+    "./sections/Header.tsx": $$$10,
+    "./sections/Preparacao.tsx": $$$11,
+    "./sections/Preview.tsx": $$$12,
+    "./sections/Regras.tsx": $$$13,
+    "./sections/Regulamento.tsx": $$$14,
+    "./sections/Setup.tsx": $$$15,
+    "./sections/Spacer.tsx": $$$16,
+    "deco-sites/std/sections/SEO.tsx": $$$17,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$18,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$19,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$20,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$21,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$22,
   },
   functions: {
     "$live/functions/EffectSelectPage.ts": $$$$0,
@@ -174,6 +176,77 @@ const manifest: DecoManifest = {
           },
         },
         "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/3rdSchedule.tsx": {
+      "inputSchema": {
+        "title": "3rd Schedule",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "titlePadding": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title Padding",
+          },
+          "text": {
+            "type": "string",
+            "title": "Text",
+            "format": "textarea",
+          },
+          "columns": {
+            "title": "Columns",
+            "type": "array",
+            "items": {
+              "title": "Column",
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "entries": {
+                  "title": "Entries",
+                  "type": "array",
+                  "items": {
+                    "title": "Entry",
+                    "type": "object",
+                    "properties": {
+                      "time": {
+                        "type": "string",
+                        "title": "Time",
+                      },
+                      "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "format": "textarea",
+                      },
+                    },
+                    "required": [
+                      "time",
+                      "text",
+                    ],
+                  },
+                  "format": "textarea",
+                },
+              },
+              "required": [
+                "title",
+                "entries",
+              ],
+            },
+          },
+        },
+        "required": [
+          "title",
+          "text",
+        ],
       },
       "outputSchema": null,
     },

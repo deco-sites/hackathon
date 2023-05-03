@@ -6,6 +6,10 @@ export default {
     body: {
       background: "#0A2121",
     },
+    a: {
+      decoration: "underline",
+      color: "#02F67C",
+    },
     p: {
       marginBottom: ".8em",
     },
@@ -36,11 +40,6 @@ export default {
       boxShadow: {
         "3xl": "16px 16px 0px rgba(2, 246, 124, 0.3)",
         "4xl": "24px 24px 0px rgba(2, 246, 124, 0.3)"
-      }
-    },
-    plugins: {
-      ".underline": {
-        "text-decoration": "underline"
       }
     },
   },
