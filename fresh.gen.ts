@@ -509,10 +509,8 @@ const manifest: DecoManifest = {
                 "type": "object",
                 "properties": {
                   "image": {
-                    "type": [
-                      "string",
-                      "null",
-                    ],
+                    "format": "image-uri",
+                    "type": "string",
                     "title": "Image",
                   },
                   "altText": {
@@ -529,25 +527,11 @@ const manifest: DecoManifest = {
                     ],
                     "title": "Link",
                   },
-                  "Alignment": {
-                    "type": "string",
-                    "anyOf": [
-                      {
-                        "type": "string",
-                        "const": "Left",
-                      },
-                      {
-                        "type": "string",
-                        "const": "Center",
-                      },
-                    ],
-                    "title": " Alignment",
-                  },
                 },
                 "required": [],
               },
-              "menuItems": {
-                "title": "Menu Items",
+              "navItems": {
+                "title": "Nav Items",
                 "type": "array",
                 "items": {
                   "title": "MenuItem",
@@ -582,14 +566,117 @@ const manifest: DecoManifest = {
                 "title": "Icons And Labels",
                 "type": "object",
                 "properties": {
-                  "hamburger": {
-                    "title": "Hamburger",
+                  "allCategories": {
+                    "title": "All Categories",
                     "type": "object",
                     "properties": {
                       "icon": {
-                        "type": [
-                          "string",
-                          "null",
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
                         ],
                         "title": "Icon",
                       },
@@ -608,9 +695,112 @@ const manifest: DecoManifest = {
                     "type": "object",
                     "properties": {
                       "icon": {
-                        "type": [
-                          "string",
-                          "null",
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
                         ],
                         "title": "Icon",
                       },
@@ -629,9 +819,112 @@ const manifest: DecoManifest = {
                     "type": "object",
                     "properties": {
                       "icon": {
-                        "type": [
-                          "string",
-                          "null",
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
                         ],
                         "title": "Icon",
                       },
@@ -650,9 +943,112 @@ const manifest: DecoManifest = {
                     "type": "object",
                     "properties": {
                       "icon": {
-                        "type": [
-                          "string",
-                          "null",
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
                         ],
                         "title": "Icon",
                       },
@@ -671,9 +1067,112 @@ const manifest: DecoManifest = {
                     "type": "object",
                     "properties": {
                       "icon": {
-                        "type": [
-                          "string",
-                          "null",
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
                         ],
                         "title": "Icon",
                       },
@@ -689,45 +1188,6 @@ const manifest: DecoManifest = {
                   },
                 },
                 "required": [],
-              },
-              "additionalActions": {
-                "title": "Additional Actions",
-                "type": "array",
-                "items": {
-                  "title": "AdditionalActions",
-                  "type": "object",
-                  "properties": {
-                    "icon": {
-                      "type": [
-                        "string",
-                        "null",
-                      ],
-                      "title": "Icon",
-                    },
-                    "label": {
-                      "type": [
-                        "string",
-                        "null",
-                      ],
-                      "title": "Label",
-                    },
-                    "href": {
-                      "type": [
-                        "string",
-                        "null",
-                      ],
-                      "title": "Href",
-                    },
-                    "openInNewTab": {
-                      "type": [
-                        "boolean",
-                        "null",
-                      ],
-                      "title": "Open In New Tab",
-                    },
-                  },
-                  "required": [],
-                },
               },
               "search": {
                 "title": "Search",
@@ -799,8 +1259,8 @@ const manifest: DecoManifest = {
                 ],
                 "title": "Logo Alignment",
               },
-              "hamburger": {
-                "title": "Hamburger",
+              "allCategories": {
+                "title": "All Categories",
                 "type": "object",
                 "properties": {
                   "showIcon": {
@@ -820,8 +1280,8 @@ const manifest: DecoManifest = {
                 },
                 "required": [],
               },
-              "menuItems": {
-                "title": "Menu Items",
+              "navItems": {
+                "title": "Nav Items",
                 "type": "object",
                 "properties": {
                   "show": {
@@ -866,13 +1326,6 @@ const manifest: DecoManifest = {
                     ],
                     "title": "Position",
                   },
-                },
-                "required": [],
-              },
-              "defaultActions": {
-                "title": "Default Actions",
-                "type": "object",
-                "properties": {
                   "search": {
                     "title": "Search",
                     "type": "object",
@@ -975,89 +1428,89 @@ const manifest: DecoManifest = {
                     },
                     "required": [],
                   },
-                },
-                "required": [],
-              },
-              "additionalActionss": {
-                "title": "Additional Actionss",
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "showIcon": {
-                      "type": [
-                        "boolean",
-                        "null",
-                      ],
-                      "title": "Show Icon",
-                    },
-                    "showLabel": {
-                      "type": [
-                        "boolean",
-                        "null",
-                      ],
-                      "title": "Show Label",
+                  "additionalActions": {
+                    "title": "Additional Actions",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "showIcon": {
+                          "type": [
+                            "boolean",
+                            "null",
+                          ],
+                          "title": "Show Icon",
+                        },
+                        "showLabel": {
+                          "type": [
+                            "boolean",
+                            "null",
+                          ],
+                          "title": "Show Label",
+                        },
+                      },
+                      "required": [],
                     },
                   },
-                  "required": [],
-                },
-              },
-              "buttons": {
-                "title": "Buttons",
-                "type": "object",
-                "properties": {
-                  "primary": {
-                    "title": "Primary",
+                  "buttons": {
+                    "title": "Buttons",
                     "type": "object",
                     "properties": {
-                      "text": {
-                        "type": [
-                          "string",
-                          "null",
-                        ],
-                        "title": "Text",
+                      "primary": {
+                        "title": "Primary",
+                        "type": "object",
+                        "properties": {
+                          "text": {
+                            "type": [
+                              "string",
+                              "null",
+                            ],
+                            "title": "Text",
+                          },
+                          "link": {
+                            "type": [
+                              "string",
+                              "null",
+                            ],
+                            "title": "Link",
+                          },
+                          "openInNewTab": {
+                            "type": [
+                              "boolean",
+                              "null",
+                            ],
+                            "title": "Open In New Tab",
+                          },
+                        },
+                        "required": [],
                       },
-                      "link": {
-                        "type": [
-                          "string",
-                          "null",
-                        ],
-                        "title": "Link",
-                      },
-                      "openInNewTab": {
-                        "type": [
-                          "boolean",
-                          "null",
-                        ],
-                        "title": "Open In New Tab",
-                      },
-                    },
-                    "required": [],
-                  },
-                  "secondary": {
-                    "title": "Secondary",
-                    "type": "object",
-                    "properties": {
-                      "text": {
-                        "type": [
-                          "string",
-                          "null",
-                        ],
-                        "title": "Text",
-                      },
-                      "link": {
-                        "type": [
-                          "string",
-                          "null",
-                        ],
-                        "title": "Link",
-                      },
-                      "openInNewTab": {
-                        "type": [
-                          "boolean",
-                          "null",
-                        ],
-                        "title": "Open In New Tab",
+                      "secondary": {
+                        "title": "Secondary",
+                        "type": "object",
+                        "properties": {
+                          "text": {
+                            "type": [
+                              "string",
+                              "null",
+                            ],
+                            "title": "Text",
+                          },
+                          "link": {
+                            "type": [
+                              "string",
+                              "null",
+                            ],
+                            "title": "Link",
+                          },
+                          "openInNewTab": {
+                            "type": [
+                              "boolean",
+                              "null",
+                            ],
+                            "title": "Open In New Tab",
+                          },
+                        },
+                        "required": [],
                       },
                     },
                     "required": [],

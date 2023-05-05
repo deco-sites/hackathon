@@ -259,6 +259,7 @@
     "https://denopkg.com/deco-sites/std@0.0.4/components/seo/SEOPDP.tsx": "dc924c65c58a15eec3d2f8f363150b4d01effdf11701e92570df5687af59082d",
     "https://denopkg.com/deco-sites/std@0.0.4/components/seo/SEOPLP.tsx": "7898082f497b5cd8bb387d964b8a5099fe24da1804219a3ffd9cbf416df75356",
     "https://denopkg.com/deco-sites/std@0.0.4/components/seo/ScriptLDJson.tsx": "87892eafde19811a13526d60c0402dccbbd97be88cbc7bedb3b01be32f32e193",
+    "https://denopkg.com/deco-sites/std@0.0.4/components/types.ts": "53f56051fe01ff7037c0d6d4d847f8333f67a3e83e765be37314d17b4307e9b5",
     "https://denopkg.com/deco-sites/std@0.0.4/deno.json": "3e7bfb6ff1150832e195bfa2d274a0de90440a294a4a8544c38a825adbaaf461",
     "https://denopkg.com/deco-sites/std@0.0.4/fresh.gen.ts": "3bd97924424eab82a3b86537176135f933f8ebc0df927c2e05b82b6bd6e68c12",
     "https://denopkg.com/deco-sites/std@0.0.4/functions/occProductDetailsPage.ts": "46e5ae5480c81cf7288769a99f595191b4813458c6aba47895cb0002b015fc09",

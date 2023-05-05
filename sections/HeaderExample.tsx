@@ -1,3 +1,6 @@
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Icon, { AvailableIcons, } from "../components/ui/Icon.tsx";
+
 export interface MenuItem {
     label?: string,
     href?: string,
@@ -5,7 +8,7 @@ export interface MenuItem {
 }
 
 export interface AdditionalActions {
-    icon?: string,
+    icon?: LiveImage,
     label?: string,
     href?: string,
     openInNewTab?: boolean,
@@ -14,35 +17,33 @@ export interface AdditionalActions {
 export interface Props {
     config?: {
         logo?: {
-            image?: string;
+            image?: LiveImage;
             altText?: string;
             link?: string;
-            Alignment?: "Left" | "Center"            
         },
-        menuItems?: Array<MenuItem>,
+        navItems?: Array<MenuItem>,
         iconsAndLabels?: {
-            hamburger?: {
-                icon?: string,
-                label?: string,    
+            allCategories?: {
+                icon?: AvailableIcons,
+                label?: string,
             },
             search?: {
-                icon?: string,
-                label?: string,    
+                icon?: AvailableIcons,
+                label?: string,
             },
             favorites?: {
-                icon?: string,
-                label?: string,    
+                icon?: AvailableIcons,
+                label?: string,
             },
             myAccount?: {
-                icon?: string,
-                label?: string,    
+                icon?: AvailableIcons,
+                label?: string,
             },
             cart?: {
-                icon?: string,
-                label?: string,    
+                icon?: AvailableIcons,
+                label?: string,
             },
         },
-        additionalActions?: Array<AdditionalActions>,    
         search?: {
             placeholder?: string
             action?: string
@@ -53,18 +54,16 @@ export interface Props {
     desktop?: {
         layout?: "Single line" | "Double line"
         logoAlignment?: "Left" | "Center"
-        hamburger?: {
+        allCategories?: {
             showIcon?: boolean,
             showLabel?: boolean,    
         },
-        menuItems?: {
+        navItems?: {
             show?: boolean,
             alignment?: "Left" | "Center"
         },
         actionItems?: {
             position?: "First line" | "Second line",
-        }
-        defaultActions?: {
             search?: {
                 showIcon?: boolean,
                 showLabel?: boolean,
@@ -82,25 +81,28 @@ export interface Props {
                 showIcon?: boolean,
                 showLabel?: boolean,
             },
+            additionalActions?: Array<{
+                showIcon?: boolean,
+                showLabel?: boolean,    
+            }>,
+            buttons?: {
+                primary?: {
+                    text?: string,
+                    link?: string,
+                    openInNewTab?: boolean,
+                },
+                secondary?: {
+                    text?: string,
+                    link?: string,
+                    openInNewTab?: boolean,
+                }
+            },    
         },
-        additionalActionss?: Array<{
-            showIcon?: boolean,
-            showLabel?: boolean,    
-        }>,
-        buttons?: {
-            primary?: {
-                text?: string,
-                link?: string,
-                openInNewTab?: boolean,
-            },
-            secondary?: {
-                text?: string,
-                link?: string,
-                openInNewTab?: boolean,
-            }
-        },
+        /**
+         * @title Navigation items
+         * @description Only if it's not shown in Action items
+         */
         inlineSearch?: {
-            /** @description Only if it's not shown in Action items */
             show?: boolean,
             alignment?: "Left" | "Center"
         },
