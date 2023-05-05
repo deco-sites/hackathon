@@ -31,18 +31,19 @@ import * as $$$8 from "./sections/Guides.tsx";
 import * as $$$9 from "./sections/Head.tsx";
 import * as $$$10 from "./sections/Header.tsx";
 import * as $$$11 from "./sections/HeaderExample.tsx";
-import * as $$$12 from "./sections/Preparacao.tsx";
-import * as $$$13 from "./sections/Preview.tsx";
-import * as $$$14 from "./sections/Regras.tsx";
-import * as $$$15 from "./sections/Regulamento.tsx";
-import * as $$$16 from "./sections/Setup.tsx";
-import * as $$$17 from "./sections/Spacer.tsx";
-import * as $$$18 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$19 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$20 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$21 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$22 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$23 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$12 from "./sections/HeaderExample2.tsx";
+import * as $$$13 from "./sections/Preparacao.tsx";
+import * as $$$14 from "./sections/Preview.tsx";
+import * as $$$15 from "./sections/Regras.tsx";
+import * as $$$16 from "./sections/Regulamento.tsx";
+import * as $$$17 from "./sections/Setup.tsx";
+import * as $$$18 from "./sections/Spacer.tsx";
+import * as $$$19 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$20 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$21 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$22 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$23 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$24 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$1 from "$live/functions/MatchDate.ts";
 import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
@@ -92,18 +93,19 @@ const manifest: DecoManifest = {
     "./sections/Head.tsx": $$$9,
     "./sections/Header.tsx": $$$10,
     "./sections/HeaderExample.tsx": $$$11,
-    "./sections/Preparacao.tsx": $$$12,
-    "./sections/Preview.tsx": $$$13,
-    "./sections/Regras.tsx": $$$14,
-    "./sections/Regulamento.tsx": $$$15,
-    "./sections/Setup.tsx": $$$16,
-    "./sections/Spacer.tsx": $$$17,
-    "deco-sites/std/sections/SEO.tsx": $$$18,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$19,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$20,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$21,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$22,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$23,
+    "./sections/HeaderExample2.tsx": $$$12,
+    "./sections/Preparacao.tsx": $$$13,
+    "./sections/Preview.tsx": $$$14,
+    "./sections/Regras.tsx": $$$15,
+    "./sections/Regulamento.tsx": $$$16,
+    "./sections/Setup.tsx": $$$17,
+    "./sections/Spacer.tsx": $$$18,
+    "deco-sites/std/sections/SEO.tsx": $$$19,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$20,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$21,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$22,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$23,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$24,
   },
   functions: {
     "$live/functions/EffectSelectPage.ts": $$$$0,
@@ -1559,6 +1561,1321 @@ const manifest: DecoManifest = {
                   "null",
                 ],
                 "title": "Etc",
+              },
+            },
+            "required": [],
+          },
+        },
+        "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/HeaderExample2.tsx": {
+      "inputSchema": {
+        "title": " Header Example2",
+        "type": "object",
+        "properties": {
+          "layout": {
+            "type": "string",
+            "anyOf": [
+              {
+                "type": "string",
+                "const": "Single line 1",
+              },
+              {
+                "type": "string",
+                "const": "Single line 2",
+              },
+              {
+                "type": "string",
+                "const": "Single line 3",
+              },
+              {
+                "type": "string",
+                "const": "Single line 4",
+              },
+              {
+                "type": "string",
+                "const": "Single line 5",
+              },
+              {
+                "type": "string",
+                "const": "Double line 1",
+              },
+              {
+                "type": "string",
+                "const": "Double line 2",
+              },
+              {
+                "type": "string",
+                "const": "Double line 3",
+              },
+              {
+                "type": "string",
+                "const": "Double line 4",
+              },
+              {
+                "type": "string",
+                "const": "Double line 5",
+              },
+            ],
+            "title": "Layout",
+          },
+          "config": {
+            "title": "Config",
+            "type": "object",
+            "properties": {
+              "logo": {
+                "title": "Logo",
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "format": "image-uri",
+                    "type": "string",
+                    "title": "Image",
+                  },
+                  "altText": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Alt Text",
+                  },
+                  "link": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Link",
+                  },
+                },
+                "required": [],
+              },
+              "navItems": {
+                "title": "Nav Items",
+                "type": "array",
+                "items": {
+                  "title": "MenuItem",
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Label",
+                    },
+                    "href": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Href",
+                    },
+                    "image": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Image",
+                    },
+                  },
+                  "required": [],
+                },
+              },
+              "iconsAndLabels": {
+                "title": "Icons And Labels",
+                "type": "object",
+                "properties": {
+                  "allCategories": {
+                    "title": "All Categories",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "search": {
+                    "title": "Search",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "favorites": {
+                    "title": "Favorites",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "myAccount": {
+                    "title": "My Account",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "cart": {
+                    "title": "Cart",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Circle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronLeft",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronRight",
+                          },
+                          {
+                            "type": "string",
+                            "const": "QuestionMarkCircle",
+                          },
+                          {
+                            "type": "string",
+                            "const": "User",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ShoppingCart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Bars3",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Heart",
+                          },
+                          {
+                            "type": "string",
+                            "const": "MagnifyingGlass",
+                          },
+                          {
+                            "type": "string",
+                            "const": "XMark",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Elo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Mastercard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Visa",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Pix",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Logo",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Facebook",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Instagram",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Tiktok",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Truck",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discount",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Return",
+                          },
+                          {
+                            "type": "string",
+                            "const": "CreditCard",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Deco",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Discord",
+                          },
+                          {
+                            "type": "string",
+                            "const": "FilterList",
+                          },
+                          {
+                            "type": "string",
+                            "const": "ChevronUp",
+                          },
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                },
+                "required": [],
+              },
+              "search": {
+                "title": "Search",
+                "type": "object",
+                "properties": {
+                  "placeholder": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Placeholder",
+                  },
+                  "action": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Action",
+                  },
+                  "name": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Name",
+                  },
+                  "query": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Query",
+                  },
+                },
+                "required": [],
+              },
+            },
+            "required": [],
+          },
+          "desktopContent": {
+            "title": "Desktop Content",
+            "type": "object",
+            "properties": {
+              "navBar": {
+                "type": [
+                  "boolean",
+                  "null",
+                ],
+                "title": "Nav Bar",
+              },
+              "searchBar": {
+                "type": [
+                  "boolean",
+                  "null",
+                ],
+                "title": "Search Bar",
+              },
+              "actionButtons": {
+                "type": [
+                  "boolean",
+                  "null",
+                ],
+                "title": "Action Buttons",
+              },
+              "allCategories": {
+                "title": "All Categories",
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Icon",
+                  },
+                  "label": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Label",
+                  },
+                },
+                "required": [],
+              },
+              "actionItems": {
+                "title": "Action Items",
+                "type": "object",
+                "properties": {
+                  "search": {
+                    "title": "Search",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                      "openIn": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Same place",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Below header",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Entire screen",
+                          },
+                        ],
+                        "title": "Open In",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "favorites": {
+                    "title": "Favorites",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "myAccount": {
+                    "title": "My Account",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "cart": {
+                    "title": "Cart",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                },
+                "required": [],
+              },
+              "moreActions": {
+                "title": "More Actions",
+                "type": "array",
+                "items": {
+                  "title": "Action",
+                  "type": "object",
+                  "properties": {
+                    "icon": {
+                      "type": "string",
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "const": "Circle",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ChevronLeft",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ChevronRight",
+                        },
+                        {
+                          "type": "string",
+                          "const": "QuestionMarkCircle",
+                        },
+                        {
+                          "type": "string",
+                          "const": "User",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ShoppingCart",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Bars3",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Heart",
+                        },
+                        {
+                          "type": "string",
+                          "const": "MagnifyingGlass",
+                        },
+                        {
+                          "type": "string",
+                          "const": "XMark",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Elo",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Mastercard",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Visa",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Pix",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Logo",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Facebook",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Instagram",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Tiktok",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Truck",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Discount",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Return",
+                        },
+                        {
+                          "type": "string",
+                          "const": "CreditCard",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Deco",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Discord",
+                        },
+                        {
+                          "type": "string",
+                          "const": "FilterList",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ChevronUp",
+                        },
+                      ],
+                      "title": "Icon",
+                    },
+                    "label": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Label",
+                    },
+                    "href": {
+                      "type": "string",
+                      "title": "Href",
+                    },
+                  },
+                  "required": [
+                    "href",
+                  ],
+                },
+              },
+              "buttons": {
+                "title": "Buttons",
+                "type": "array",
+                "items": {
+                  "title": "Button",
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "title": "Label",
+                    },
+                    "variant": {
+                      "type": "string",
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "const": "Primary",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Secondary",
+                        },
+                      ],
+                      "title": "Variant",
+                    },
+                    "href": {
+                      "type": "string",
+                      "title": "Href",
+                    },
+                  },
+                  "required": [
+                    "label",
+                    "href",
+                  ],
+                },
+              },
+            },
+            "required": [],
+          },
+          "mobileContent": {
+            "title": "Mobile Content",
+            "type": "object",
+            "properties": {
+              "searchBar": {
+                "type": [
+                  "boolean",
+                  "null",
+                ],
+                "title": "Search Bar",
+              },
+              "actionItems": {
+                "title": "Action Items",
+                "type": "object",
+                "properties": {
+                  "search": {
+                    "title": "Search",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "openIn": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Below header",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Entire screen",
+                          },
+                        ],
+                        "title": "Open In",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "favorites": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Favorites",
+                  },
+                  "myAccount": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "My Account",
+                  },
+                  "cart": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Cart",
+                  },
+                },
+                "required": [],
+              },
+              "moreActions": {
+                "title": "More Actions",
+                "type": "array",
+                "items": {
+                  "title": "Action",
+                  "type": "object",
+                  "properties": {
+                    "icon": {
+                      "type": "string",
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "const": "Circle",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ChevronLeft",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ChevronRight",
+                        },
+                        {
+                          "type": "string",
+                          "const": "QuestionMarkCircle",
+                        },
+                        {
+                          "type": "string",
+                          "const": "User",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ShoppingCart",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Bars3",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Heart",
+                        },
+                        {
+                          "type": "string",
+                          "const": "MagnifyingGlass",
+                        },
+                        {
+                          "type": "string",
+                          "const": "XMark",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Elo",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Mastercard",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Visa",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Pix",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Logo",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Facebook",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Instagram",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Tiktok",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Truck",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Discount",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Return",
+                        },
+                        {
+                          "type": "string",
+                          "const": "CreditCard",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Deco",
+                        },
+                        {
+                          "type": "string",
+                          "const": "Discord",
+                        },
+                        {
+                          "type": "string",
+                          "const": "FilterList",
+                        },
+                        {
+                          "type": "string",
+                          "const": "ChevronUp",
+                        },
+                      ],
+                      "title": "Icon",
+                    },
+                    "label": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Label",
+                    },
+                    "href": {
+                      "type": "string",
+                      "title": "Href",
+                    },
+                  },
+                  "required": [
+                    "href",
+                  ],
+                },
               },
             },
             "required": [],
