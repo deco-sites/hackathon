@@ -12,43 +12,45 @@ export interface AdditionalActions {
 }
 
 export interface Props {
-    logo?: {
-        image?: string;
-        altText?: string;
-        link?: string;
-        Alignment?: "Left" | "Center"            
-    },
-    menuItems?: Array<MenuItem>,
-    iconsAndLabels?: {
-        hamburger?: {
-            icon?: string,
-            label?: string,    
+    config?: {
+        logo?: {
+            image?: string;
+            altText?: string;
+            link?: string;
+            Alignment?: "Left" | "Center"            
         },
+        menuItems?: Array<MenuItem>,
+        iconsAndLabels?: {
+            hamburger?: {
+                icon?: string,
+                label?: string,    
+            },
+            search?: {
+                icon?: string,
+                label?: string,    
+            },
+            favorites?: {
+                icon?: string,
+                label?: string,    
+            },
+            myAccount?: {
+                icon?: string,
+                label?: string,    
+            },
+            cart?: {
+                icon?: string,
+                label?: string,    
+            },
+        },
+        additionalActions?: Array<AdditionalActions>,    
         search?: {
-            icon?: string,
-            label?: string,    
-        },
-        favorites?: {
-            icon?: string,
-            label?: string,    
-        },
-        myAccount?: {
-            icon?: string,
-            label?: string,    
-        },
-        cart?: {
-            icon?: string,
-            label?: string,    
+            placeholder?: string
+            action?: string
+            name?: string
+            query?: string    
         },
     },
-    additionalActions?: Array<AdditionalActions>,    
-    searchConfig?: {
-        placeholder?: string
-        action?: string
-        name?: string
-        query?: string    
-    },
-    desktopOptions?: {
+    desktop?: {
         layout?: "Single line" | "Double line"
         logoAlignment?: "Left" | "Center"
         hamburger?: {
@@ -103,7 +105,7 @@ export interface Props {
             alignment?: "Left" | "Center"
         },
     },
-    mobileOptions?: {
+    mobile?: {
         etc?: string,
     }
 }  

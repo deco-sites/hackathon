@@ -500,185 +500,266 @@ const manifest: DecoManifest = {
         "title": " Header Example",
         "type": "object",
         "properties": {
-          "logo": {
-            "title": "Logo",
+          "config": {
+            "title": "Config",
             "type": "object",
             "properties": {
-              "image": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Image",
-              },
-              "altText": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Alt Text",
-              },
-              "link": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Link",
-              },
-              "Alignment": {
-                "type": "string",
-                "anyOf": [
-                  {
-                    "type": "string",
-                    "const": "Left",
-                  },
-                  {
-                    "type": "string",
-                    "const": "Center",
-                  },
-                ],
-                "title": " Alignment",
-              },
-            },
-            "required": [],
-          },
-          "menuItems": {
-            "title": "Menu Items",
-            "type": "array",
-            "items": {
-              "title": "MenuItem",
-              "type": "object",
-              "properties": {
-                "label": {
-                  "type": [
-                    "string",
-                    "null",
-                  ],
-                  "title": "Label",
-                },
-                "href": {
-                  "type": [
-                    "string",
-                    "null",
-                  ],
-                  "title": "Href",
-                },
-                "image": {
-                  "type": [
-                    "string",
-                    "null",
-                  ],
-                  "title": "Image",
-                },
-              },
-              "required": [],
-            },
-          },
-          "iconsAndLabels": {
-            "title": "Icons And Labels",
-            "type": "object",
-            "properties": {
-              "hamburger": {
-                "title": "Hamburger",
+              "logo": {
+                "title": "Logo",
                 "type": "object",
                 "properties": {
-                  "icon": {
+                  "image": {
                     "type": [
                       "string",
                       "null",
                     ],
-                    "title": "Icon",
+                    "title": "Image",
                   },
-                  "label": {
+                  "altText": {
                     "type": [
                       "string",
                       "null",
                     ],
-                    "title": "Label",
+                    "title": "Alt Text",
+                  },
+                  "link": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Link",
+                  },
+                  "Alignment": {
+                    "type": "string",
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "const": "Left",
+                      },
+                      {
+                        "type": "string",
+                        "const": "Center",
+                      },
+                    ],
+                    "title": " Alignment",
                   },
                 },
                 "required": [],
+              },
+              "menuItems": {
+                "title": "Menu Items",
+                "type": "array",
+                "items": {
+                  "title": "MenuItem",
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Label",
+                    },
+                    "href": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Href",
+                    },
+                    "image": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Image",
+                    },
+                  },
+                  "required": [],
+                },
+              },
+              "iconsAndLabels": {
+                "title": "Icons And Labels",
+                "type": "object",
+                "properties": {
+                  "hamburger": {
+                    "title": "Hamburger",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "search": {
+                    "title": "Search",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "favorites": {
+                    "title": "Favorites",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "myAccount": {
+                    "title": "My Account",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "cart": {
+                    "title": "Cart",
+                    "type": "object",
+                    "properties": {
+                      "icon": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Icon",
+                      },
+                      "label": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                },
+                "required": [],
+              },
+              "additionalActions": {
+                "title": "Additional Actions",
+                "type": "array",
+                "items": {
+                  "title": "AdditionalActions",
+                  "type": "object",
+                  "properties": {
+                    "icon": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Icon",
+                    },
+                    "label": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Label",
+                    },
+                    "href": {
+                      "type": [
+                        "string",
+                        "null",
+                      ],
+                      "title": "Href",
+                    },
+                    "openInNewTab": {
+                      "type": [
+                        "boolean",
+                        "null",
+                      ],
+                      "title": "Open In New Tab",
+                    },
+                  },
+                  "required": [],
+                },
               },
               "search": {
                 "title": "Search",
                 "type": "object",
                 "properties": {
-                  "icon": {
+                  "placeholder": {
                     "type": [
                       "string",
                       "null",
                     ],
-                    "title": "Icon",
+                    "title": "Placeholder",
                   },
-                  "label": {
+                  "action": {
                     "type": [
                       "string",
                       "null",
                     ],
-                    "title": "Label",
+                    "title": "Action",
                   },
-                },
-                "required": [],
-              },
-              "favorites": {
-                "title": "Favorites",
-                "type": "object",
-                "properties": {
-                  "icon": {
+                  "name": {
                     "type": [
                       "string",
                       "null",
                     ],
-                    "title": "Icon",
+                    "title": "Name",
                   },
-                  "label": {
+                  "query": {
                     "type": [
                       "string",
                       "null",
                     ],
-                    "title": "Label",
-                  },
-                },
-                "required": [],
-              },
-              "myAccount": {
-                "title": "My Account",
-                "type": "object",
-                "properties": {
-                  "icon": {
-                    "type": [
-                      "string",
-                      "null",
-                    ],
-                    "title": "Icon",
-                  },
-                  "label": {
-                    "type": [
-                      "string",
-                      "null",
-                    ],
-                    "title": "Label",
-                  },
-                },
-                "required": [],
-              },
-              "cart": {
-                "title": "Cart",
-                "type": "object",
-                "properties": {
-                  "icon": {
-                    "type": [
-                      "string",
-                      "null",
-                    ],
-                    "title": "Icon",
-                  },
-                  "label": {
-                    "type": [
-                      "string",
-                      "null",
-                    ],
-                    "title": "Label",
+                    "title": "Query",
                   },
                 },
                 "required": [],
@@ -686,82 +767,8 @@ const manifest: DecoManifest = {
             },
             "required": [],
           },
-          "additionalActions": {
-            "title": "Additional Actions",
-            "type": "array",
-            "items": {
-              "title": "AdditionalActions",
-              "type": "object",
-              "properties": {
-                "icon": {
-                  "type": [
-                    "string",
-                    "null",
-                  ],
-                  "title": "Icon",
-                },
-                "label": {
-                  "type": [
-                    "string",
-                    "null",
-                  ],
-                  "title": "Label",
-                },
-                "href": {
-                  "type": [
-                    "string",
-                    "null",
-                  ],
-                  "title": "Href",
-                },
-                "openInNewTab": {
-                  "type": [
-                    "boolean",
-                    "null",
-                  ],
-                  "title": "Open In New Tab",
-                },
-              },
-              "required": [],
-            },
-          },
-          "searchConfig": {
-            "title": "Search Config",
-            "type": "object",
-            "properties": {
-              "placeholder": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Placeholder",
-              },
-              "action": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Action",
-              },
-              "name": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Name",
-              },
-              "query": {
-                "type": [
-                  "string",
-                  "null",
-                ],
-                "title": "Query",
-              },
-            },
-            "required": [],
-          },
-          "desktopOptions": {
-            "title": "Desktop Options",
+          "desktop": {
+            "title": "Desktop",
             "type": "object",
             "properties": {
               "layout": {
@@ -1089,8 +1096,8 @@ const manifest: DecoManifest = {
             },
             "required": [],
           },
-          "mobileOptions": {
-            "title": "Mobile Options",
+          "mobile": {
+            "title": "Mobile",
             "type": "object",
             "properties": {
               "etc": {
@@ -1104,9 +1111,7 @@ const manifest: DecoManifest = {
             "required": [],
           },
         },
-        "required": [
-          "mobileOptions",
-        ],
+        "required": [],
       },
       "outputSchema": null,
     },
