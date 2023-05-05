@@ -30,18 +30,19 @@ import * as $$$7 from "./sections/Footer.tsx";
 import * as $$$8 from "./sections/Guides.tsx";
 import * as $$$9 from "./sections/Head.tsx";
 import * as $$$10 from "./sections/Header.tsx";
-import * as $$$11 from "./sections/Preparacao.tsx";
-import * as $$$12 from "./sections/Preview.tsx";
-import * as $$$13 from "./sections/Regras.tsx";
-import * as $$$14 from "./sections/Regulamento.tsx";
-import * as $$$15 from "./sections/Setup.tsx";
-import * as $$$16 from "./sections/Spacer.tsx";
-import * as $$$17 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$18 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$19 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$20 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$21 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$22 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$11 from "./sections/HeaderExample.tsx";
+import * as $$$12 from "./sections/Preparacao.tsx";
+import * as $$$13 from "./sections/Preview.tsx";
+import * as $$$14 from "./sections/Regras.tsx";
+import * as $$$15 from "./sections/Regulamento.tsx";
+import * as $$$16 from "./sections/Setup.tsx";
+import * as $$$17 from "./sections/Spacer.tsx";
+import * as $$$18 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$19 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$20 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$21 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$22 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$23 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$1 from "$live/functions/MatchDate.ts";
 import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
@@ -90,18 +91,19 @@ const manifest: DecoManifest = {
     "./sections/Guides.tsx": $$$8,
     "./sections/Head.tsx": $$$9,
     "./sections/Header.tsx": $$$10,
-    "./sections/Preparacao.tsx": $$$11,
-    "./sections/Preview.tsx": $$$12,
-    "./sections/Regras.tsx": $$$13,
-    "./sections/Regulamento.tsx": $$$14,
-    "./sections/Setup.tsx": $$$15,
-    "./sections/Spacer.tsx": $$$16,
-    "deco-sites/std/sections/SEO.tsx": $$$17,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$18,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$19,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$20,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$21,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$22,
+    "./sections/HeaderExample.tsx": $$$11,
+    "./sections/Preparacao.tsx": $$$12,
+    "./sections/Preview.tsx": $$$13,
+    "./sections/Regras.tsx": $$$14,
+    "./sections/Regulamento.tsx": $$$15,
+    "./sections/Setup.tsx": $$$16,
+    "./sections/Spacer.tsx": $$$17,
+    "deco-sites/std/sections/SEO.tsx": $$$18,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$19,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$20,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$21,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$22,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$23,
   },
   functions: {
     "$live/functions/EffectSelectPage.ts": $$$$0,
@@ -138,6 +140,13 @@ const manifest: DecoManifest = {
           "dateEnd": {
             "type": "string",
             "title": "Date End",
+          },
+          "olar": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Olar",
           },
         },
         "required": [
@@ -484,6 +493,621 @@ const manifest: DecoManifest = {
     },
     "./sections/Header.tsx": {
       "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/HeaderExample.tsx": {
+      "inputSchema": {
+        "title": " Header Example",
+        "type": "object",
+        "properties": {
+          "logo": {
+            "title": "Logo",
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Image",
+              },
+              "altText": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Alt Text",
+              },
+              "link": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Link",
+              },
+              "Alignment": {
+                "type": "string",
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "Left",
+                  },
+                  {
+                    "type": "string",
+                    "const": "Center",
+                  },
+                ],
+                "title": " Alignment",
+              },
+            },
+            "required": [],
+          },
+          "menuItems": {
+            "title": "Menu Items",
+            "type": "array",
+            "items": {
+              "title": "MenuItem",
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Label",
+                },
+                "href": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Href",
+                },
+                "image": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Image",
+                },
+              },
+              "required": [],
+            },
+          },
+          "iconsAndLabels": {
+            "title": "Icons And Labels",
+            "type": "object",
+            "properties": {
+              "hamburger": {
+                "title": "Hamburger",
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Icon",
+                  },
+                  "label": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Label",
+                  },
+                },
+                "required": [],
+              },
+              "search": {
+                "title": "Search",
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Icon",
+                  },
+                  "label": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Label",
+                  },
+                },
+                "required": [],
+              },
+              "favorites": {
+                "title": "Favorites",
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Icon",
+                  },
+                  "label": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Label",
+                  },
+                },
+                "required": [],
+              },
+              "myAccount": {
+                "title": "My Account",
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Icon",
+                  },
+                  "label": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Label",
+                  },
+                },
+                "required": [],
+              },
+              "cart": {
+                "title": "Cart",
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Icon",
+                  },
+                  "label": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                    "title": "Label",
+                  },
+                },
+                "required": [],
+              },
+            },
+            "required": [],
+          },
+          "additionalActions": {
+            "title": "Additional Actions",
+            "type": "array",
+            "items": {
+              "title": "AdditionalActions",
+              "type": "object",
+              "properties": {
+                "icon": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Icon",
+                },
+                "label": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Label",
+                },
+                "href": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Href",
+                },
+                "openInNewTab": {
+                  "type": [
+                    "boolean",
+                    "null",
+                  ],
+                  "title": "Open In New Tab",
+                },
+              },
+              "required": [],
+            },
+          },
+          "searchConfig": {
+            "title": "Search Config",
+            "type": "object",
+            "properties": {
+              "placeholder": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Placeholder",
+              },
+              "action": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Action",
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Name",
+              },
+              "query": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Query",
+              },
+            },
+            "required": [],
+          },
+          "desktopOptions": {
+            "title": "Desktop Options",
+            "type": "object",
+            "properties": {
+              "layout": {
+                "type": "string",
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "Single line",
+                  },
+                  {
+                    "type": "string",
+                    "const": "Double line",
+                  },
+                ],
+                "title": "Layout",
+              },
+              "logoAlignment": {
+                "type": "string",
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "Left",
+                  },
+                  {
+                    "type": "string",
+                    "const": "Center",
+                  },
+                ],
+                "title": "Logo Alignment",
+              },
+              "hamburger": {
+                "title": "Hamburger",
+                "type": "object",
+                "properties": {
+                  "showIcon": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Show Icon",
+                  },
+                  "showLabel": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Show Label",
+                  },
+                },
+                "required": [],
+              },
+              "menuItems": {
+                "title": "Menu Items",
+                "type": "object",
+                "properties": {
+                  "show": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Show",
+                  },
+                  "alignment": {
+                    "type": "string",
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "const": "Left",
+                      },
+                      {
+                        "type": "string",
+                        "const": "Center",
+                      },
+                    ],
+                    "title": "Alignment",
+                  },
+                },
+                "required": [],
+              },
+              "actionItems": {
+                "title": "Action Items",
+                "type": "object",
+                "properties": {
+                  "position": {
+                    "type": "string",
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "const": "First line",
+                      },
+                      {
+                        "type": "string",
+                        "const": "Second line",
+                      },
+                    ],
+                    "title": "Position",
+                  },
+                },
+                "required": [],
+              },
+              "defaultActions": {
+                "title": "Default Actions",
+                "type": "object",
+                "properties": {
+                  "search": {
+                    "title": "Search",
+                    "type": "object",
+                    "properties": {
+                      "showIcon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Icon",
+                      },
+                      "showLabel": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Label",
+                      },
+                      "openIn": {
+                        "type": "string",
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "const": "Same place",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Below header",
+                          },
+                          {
+                            "type": "string",
+                            "const": "Entire screen",
+                          },
+                        ],
+                        "title": "Open In",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "favorites": {
+                    "title": "Favorites",
+                    "type": "object",
+                    "properties": {
+                      "showIcon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Icon",
+                      },
+                      "showLabel": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "account": {
+                    "title": "Account",
+                    "type": "object",
+                    "properties": {
+                      "showIcon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Icon",
+                      },
+                      "showLabel": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "cart": {
+                    "title": "Cart",
+                    "type": "object",
+                    "properties": {
+                      "showIcon": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Icon",
+                      },
+                      "showLabel": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Show Label",
+                      },
+                    },
+                    "required": [],
+                  },
+                },
+                "required": [],
+              },
+              "additionalActionss": {
+                "title": "Additional Actionss",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "showIcon": {
+                      "type": [
+                        "boolean",
+                        "null",
+                      ],
+                      "title": "Show Icon",
+                    },
+                    "showLabel": {
+                      "type": [
+                        "boolean",
+                        "null",
+                      ],
+                      "title": "Show Label",
+                    },
+                  },
+                  "required": [],
+                },
+              },
+              "buttons": {
+                "title": "Buttons",
+                "type": "object",
+                "properties": {
+                  "primary": {
+                    "title": "Primary",
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Text",
+                      },
+                      "link": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Link",
+                      },
+                      "openInNewTab": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Open In New Tab",
+                      },
+                    },
+                    "required": [],
+                  },
+                  "secondary": {
+                    "title": "Secondary",
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Text",
+                      },
+                      "link": {
+                        "type": [
+                          "string",
+                          "null",
+                        ],
+                        "title": "Link",
+                      },
+                      "openInNewTab": {
+                        "type": [
+                          "boolean",
+                          "null",
+                        ],
+                        "title": "Open In New Tab",
+                      },
+                    },
+                    "required": [],
+                  },
+                },
+                "required": [],
+              },
+              "inlineSearch": {
+                "title": "Inline Search",
+                "type": "object",
+                "properties": {
+                  "show": {
+                    "type": [
+                      "boolean",
+                      "null",
+                    ],
+                    "title": "Show",
+                  },
+                  "alignment": {
+                    "type": "string",
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "const": "Left",
+                      },
+                      {
+                        "type": "string",
+                        "const": "Center",
+                      },
+                    ],
+                    "title": "Alignment",
+                  },
+                },
+                "required": [],
+              },
+            },
+            "required": [],
+          },
+          "mobileOptions": {
+            "title": "Mobile Options",
+            "type": "object",
+            "properties": {
+              "etc": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Etc",
+              },
+            },
+            "required": [],
+          },
+        },
+        "required": [
+          "mobileOptions",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Preparacao.tsx": {

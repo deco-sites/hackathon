@@ -2,6 +2,7 @@ export interface Props {
     location: string;
     dateStart: string;
     dateEnd: string;
+    olar?: string;
   }
 
 export default function Header({
