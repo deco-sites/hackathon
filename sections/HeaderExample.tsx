@@ -103,7 +103,7 @@ export interface Props {
             alignment?: "Left" | "Center"
         },
     },
-    mobileOptions: {
+    mobileOptions?: {
         etc?: string,
     }
 }  
